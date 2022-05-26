@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IOr-mm-kM2">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Fourth View Controller-->
+        <scene sceneID="GnO-FP-EA3">
+            <objects>
+                <viewController storyboardIdentifier="page04" id="sJD-Ez-cYF" customClass="FourthViewController" customModule="Ex02_Page_Seasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lps-Fw-jGV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Winter.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="S5K-Sq-JIV">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="S5K-Sq-JIV" firstAttribute="leading" secondItem="Lps-Fw-jGV" secondAttribute="leading" id="7SF-ox-fsk"/>
+                            <constraint firstItem="S5K-Sq-JIV" firstAttribute="bottom" secondItem="iAe-yz-Saz" secondAttribute="bottom" id="BJb-xM-vdc"/>
+                            <constraint firstItem="S5K-Sq-JIV" firstAttribute="top" secondItem="iAe-yz-Saz" secondAttribute="top" id="ZNT-cg-xFi"/>
+                            <constraint firstAttribute="trailing" secondItem="S5K-Sq-JIV" secondAttribute="trailing" id="wNb-wm-XR6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="iAe-yz-Saz"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="od4-3I-DG3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2276.8115942028985" y="154.6875"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="V7L-PK-IPG">
+            <objects>
+                <viewController storyboardIdentifier="page03" id="jUK-UT-mS7" customClass="ThirdViewController" customModule="Ex02_Page_Seasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DoR-qt-nq0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fall.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FpP-2g-0RF">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FpP-2g-0RF" firstAttribute="top" secondItem="YqR-4B-Vg3" secondAttribute="top" id="BRn-tr-aLN"/>
+                            <constraint firstAttribute="trailing" secondItem="FpP-2g-0RF" secondAttribute="trailing" id="DXX-2p-MoJ"/>
+                            <constraint firstItem="FpP-2g-0RF" firstAttribute="leading" secondItem="DoR-qt-nq0" secondAttribute="leading" id="VGT-VE-2et"/>
+                            <constraint firstItem="FpP-2g-0RF" firstAttribute="bottom" secondItem="YqR-4B-Vg3" secondAttribute="bottom" id="dVq-wB-3XJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YqR-4B-Vg3"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qcW-xo-EVA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1582.608695652174" y="158.70535714285714"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="ORu-rY-TiP">
+            <objects>
+                <viewController storyboardIdentifier="page02" id="lSg-Ol-YGh" customClass="SecondViewController" customModule="Ex02_Page_Seasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="9Ux-RZ-bgE">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Summer.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="5Yl-ci-XwL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5Yl-ci-XwL" firstAttribute="bottom" secondItem="e4j-JA-glP" secondAttribute="bottom" id="6Lz-q9-Tih"/>
+                            <constraint firstItem="5Yl-ci-XwL" firstAttribute="top" secondItem="e4j-JA-glP" secondAttribute="top" id="Gxr-Wh-csp"/>
+                            <constraint firstAttribute="trailing" secondItem="5Yl-ci-XwL" secondAttribute="trailing" id="cSt-Gb-IJE"/>
+                            <constraint firstItem="5Yl-ci-XwL" firstAttribute="leading" secondItem="9Ux-RZ-bgE" secondAttribute="leading" id="hXb-Kp-qBA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e4j-JA-glP"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UdB-vH-AsZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-846.37681159420299" y="158.70535714285714"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="page01" id="BYZ-38-t0r" customClass="ViewController" customModule="Ex02_Page_Seasons" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Spring.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ALA-2d-vSp">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ALA-2d-vSp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="1GB-Ws-9OB"/>
+                            <constraint firstItem="ALA-2d-vSp" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MkT-3F-NJZ"/>
+                            <constraint firstItem="ALA-2d-vSp" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="PJD-cg-21Y"/>
+                            <constraint firstAttribute="trailing" secondItem="ALA-2d-vSp" secondAttribute="trailing" id="aD3-RE-zLi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="-123.18840579710145" y="156.69642857142856"/>
+        </scene>
+        <!--My Page View Controller-->
+        <scene sceneID="nBG-4P-CtS">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="IOr-mm-kM2" customClass="MyPageViewController" customModule="Ex02_Page_Seasons" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qO2-Jq-IaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="636" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Fall.jpg" width="353" height="530"/>
+        <image name="Spring.jpg" width="355" height="530"/>
+        <image name="Summer.jpg" width="353" height="530"/>
+        <image name="Winter.jpg" width="353" height="530"/>
+    </resources>
+</document>

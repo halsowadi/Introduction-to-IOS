@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C05_switch" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jdy-UK-WKp">
+                                <rect key="frame" x="186" y="123" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s9N-er-5lO">
+                                <rect key="frame" x="28" y="433" width="30" height="30"/>
+                                <state key="normal" title="Red"/>
+                                <connections>
+                                    <action selector="cf_ChangeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6x6-WN-nS2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBP-nb-598">
+                                <rect key="frame" x="186" y="433" width="42" height="30"/>
+                                <state key="normal" title="Green"/>
+                                <connections>
+                                    <action selector="cf_ChangeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l3s-Dt-mhC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2L3-OA-Ea2">
+                                <rect key="frame" x="356" y="433" width="31" height="30"/>
+                                <state key="normal" title="Blue"/>
+                                <connections>
+                                    <action selector="cf_ChangeColor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8bx-Bg-tBR"/>
+                                </connections>
+                            </button>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sbl-do-s5v">
+                                <rect key="frame" x="20" y="633" width="49" height="31"/>
+                                <connections>
+                                    <action selector="cf_rest:" destination="BYZ-38-t0r" eventType="valueChanged" id="fba-9G-Duj"/>
+                                </connections>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Background" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TeF-q9-yg1">
+                                <rect key="frame" x="112" y="638" width="92" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s9N-er-5lO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="3Kc-vO-qEx"/>
+                            <constraint firstItem="s9N-er-5lO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="3xv-9g-9Ft"/>
+                            <constraint firstItem="TeF-q9-yg1" firstAttribute="leading" secondItem="sbl-do-s5v" secondAttribute="trailing" constant="43" id="65t-C9-tsa"/>
+                            <constraint firstItem="sbl-do-s5v" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="94l-5g-SHh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sbl-do-s5v" secondAttribute="bottom" constant="198" id="IRG-Ig-0zA"/>
+                            <constraint firstItem="jdy-UK-WKp" firstAttribute="leading" secondItem="gBP-nb-598" secondAttribute="leading" id="MLz-6q-MfY"/>
+                            <constraint firstItem="jdy-UK-WKp" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="79" id="bL7-hc-znm"/>
+                            <constraint firstItem="s9N-er-5lO" firstAttribute="baseline" secondItem="gBP-nb-598" secondAttribute="baseline" id="bb7-sf-esj"/>
+                            <constraint firstItem="gBP-nb-598" firstAttribute="baseline" secondItem="2L3-OA-Ea2" secondAttribute="baseline" id="biw-sU-emQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2L3-OA-Ea2" secondAttribute="trailing" constant="27" id="dUa-Fg-EG5"/>
+                            <constraint firstItem="jdy-UK-WKp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="upc-Ub-jO4"/>
+                            <constraint firstItem="sbl-do-s5v" firstAttribute="centerY" secondItem="TeF-q9-yg1" secondAttribute="centerY" id="vnv-4j-0Cy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="vv_btnBlue" destination="2L3-OA-Ea2" id="KvY-Mb-tDl"/>
+                        <outlet property="vv_btnGreen" destination="gBP-nb-598" id="zA4-Hq-y3W"/>
+                        <outlet property="vv_btnRed" destination="s9N-er-5lO" id="QQY-bW-Hlz"/>
+                        <outlet property="vv_switch" destination="sbl-do-s5v" id="Fy5-0Y-m6r"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

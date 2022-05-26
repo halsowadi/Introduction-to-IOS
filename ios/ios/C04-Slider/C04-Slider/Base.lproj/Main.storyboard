@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="C04_Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="18" minValue="6" maxValue="72" translatesAutoresizingMaskIntoConstraints="NO" id="UNk-4k-XBG">
+                                <rect key="frame" x="14" y="269" width="242" height="31"/>
+                                <connections>
+                                    <action selector="cf_update:" destination="BYZ-38-t0r" eventType="valueChanged" id="1zV-TA-AT1"/>
+                                </connections>
+                            </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rXH-IW-yZY">
+                                <rect key="frame" x="16" y="39" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atR-I6-Hqt">
+                                <rect key="frame" x="262" y="273.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="UNk-4k-XBG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="1Mr-hY-2xA"/>
+                            <constraint firstItem="rXH-IW-yZY" firstAttribute="leading" secondItem="UNk-4k-XBG" secondAttribute="leading" id="3g9-Ag-gOl"/>
+                            <constraint firstItem="rXH-IW-yZY" firstAttribute="trailing" secondItem="atR-I6-Hqt" secondAttribute="trailing" id="TtP-hG-InJ"/>
+                            <constraint firstItem="UNk-4k-XBG" firstAttribute="centerY" secondItem="atR-I6-Hqt" secondAttribute="centerY" id="Yv5-fH-xJR"/>
+                            <constraint firstItem="atR-I6-Hqt" firstAttribute="leading" secondItem="UNk-4k-XBG" secondAttribute="trailing" constant="8" symbolic="YES" id="aSu-4e-2RY"/>
+                            <constraint firstItem="atR-I6-Hqt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="bCv-iF-2Wt"/>
+                            <constraint firstItem="rXH-IW-yZY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jDA-6b-23C"/>
+                            <constraint firstItem="rXH-IW-yZY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="sCx-iV-b6S"/>
+                            <constraint firstItem="rXH-IW-yZY" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="x67-J5-w16"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="vv_output" destination="rXH-IW-yZY" id="e2k-Zi-zpI"/>
+                        <outlet property="vv_slider" destination="UNk-4k-XBG" id="Cby-Rb-ULY"/>
+                        <outlet property="vv_value" destination="atR-I6-Hqt" id="9Mt-07-W5I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-82.5" y="133.09859154929578"/>
+        </scene>
+    </scenes>
+</document>
